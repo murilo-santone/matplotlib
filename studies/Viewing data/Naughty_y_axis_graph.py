@@ -17,7 +17,13 @@ plt.ylabel("N° of times I heard someone say 'data science'")
 plt.ticklabel_format(useOffset=False)
 
 # the naughty y axis only shows the part above 500
-plt.axis([2016.5, 2018.5, 499, 506])
+#plt.axis([2016.5, 2018.5, 499, 506])  commented to show a fairer graph result
 # add title
-plt.title("Look at the 'Huge' Increase!")
+#plt.title("Look at the 'Huge' Increase!") commented to show a fairer graph result
+#plt.show() commented to show a fairer graph result
+
+# using more sensitive axes, to have a much less expressive result
+plt.axis([2016.5, 2018.5, 0, 550])
+# add title
+plt.title("Not So Huge Anymore")
 plt.show()
